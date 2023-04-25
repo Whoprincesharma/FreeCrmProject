@@ -40,7 +40,6 @@ public class TC003_ContactsPageTest extends TestBase{
 			
 	}
 	
-	
 	@BeforeMethod
 	public void setUp() throws InterruptedException {
 		
@@ -51,7 +50,8 @@ public class TC003_ContactsPageTest extends TestBase{
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 		TestUtil.runTimeInfo("error", "login successful");
 		testUtil.switchToFrame();
-		contactsPage = homePage.clickOnContactsLink();
+		//contactsPage = homePage.clickOnContactsLink();
+		contactsPage = homePage.clickOnNewContactLink();
 	}
 	
 	@Test(priority=1)
@@ -73,8 +73,7 @@ public class TC003_ContactsPageTest extends TestBase{
 	
 	@DataProvider
 	public Object[][] getCRMTestData(){
-		
-		TestUtil.getTestData(sheetName);
+		//TestUtil.getTestData(sheetName);
 		Object data[][] = TestUtil.getTestData(sheetName);
 		return data;
 	}

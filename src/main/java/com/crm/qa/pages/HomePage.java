@@ -56,10 +56,11 @@ public class HomePage extends TestBase {
 		return new TasksPage();
 	}
 	
-	public void clickOnNewContactLink(){
+	public ContactsPage clickOnNewContactLink(){
 		Actions action = new Actions(driver);
 		action.moveToElement(contactsLink).build().perform();
 		newContactLink.click();
+		return new ContactsPage();
 		
 	}
 	
