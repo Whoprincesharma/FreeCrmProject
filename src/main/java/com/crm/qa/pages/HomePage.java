@@ -61,11 +61,7 @@ public class HomePage extends TestBase {
 		action.moveToElement(contactsLink).build().perform();
 		newContactLink.click();
 		return new ContactsPage();
-		
 	}
-	
-	
-	
 	
 	
 	

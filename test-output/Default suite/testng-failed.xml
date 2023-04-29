@@ -5,6 +5,7 @@
     <classes>
       <class name="com.crm.qa.testcases.TC003_ContactsPageTest">
         <methods>
+          <include name="validateCreateNewContact" invocation-numbers="1"/>
           <include name="setUp"/>
           <include name="verifyContactsPageLabel"/>
           <include name="tearDown"/>

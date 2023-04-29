@@ -11,19 +11,19 @@ public class LoginPage extends TestBase{
 	
 	//Page Factory - OR:
 	@FindBy(name="username")
-	public WebElement username;
+	WebElement username;
 	
 	@FindBy(name="password")
-	public WebElement password;
+	WebElement password;
 	
 	@FindBy(xpath="//input[@type='submit']")
-	public WebElement loginBtn;
+	WebElement loginBtn;
 	
-	@FindBy(xpath="//a[contains(text(),'Sign Up')]")
-	public WebElement signUpBtn;
+	@FindBy(xpath="//button[contains(text(),'Sign Up')]")
+	WebElement signUpBtn;
 	
 	@FindBy(xpath="//img[contains(@class,'img-responsive')]")
-	public WebElement crmLogo;
+	WebElement crmLogo;
 	
 	//Initializing the Page Objects:
 	public LoginPage(){
